@@ -1,0 +1,170 @@
+{
+  "name": "@harshil3134/utils",
+  "version": "1.0.0",
+  "description": "Production-grade TypeScript utility helpers for Node.js, Express, React, and React Native",
+  "author": "harshil3134",
+  "license": "MIT",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    },
+    "./errors": {
+      "types": "./dist/errors.d.ts",
+      "import": "./dist/esm/errors.js",
+      "require": "./dist/cjs/errors.js"
+    },
+    "./validation": {
+      "types": "./dist/validation.d.ts",
+      "import": "./dist/esm/validation.js",
+      "require": "./dist/cjs/validation.js"
+    },
+    "./async": {
+      "types": "./dist/async.d.ts",
+      "import": "./dist/esm/async.js",
+      "require": "./dist/cjs/async.js"
+    },
+    "./api": {
+      "types": "./dist/api.d.ts",
+      "import": "./dist/esm/api.js",
+      "require": "./dist/cjs/api.js"
+    },
+    "./performance": {
+      "types": "./dist/performance.d.ts",
+      "import": "./dist/esm/performance.js",
+      "require": "./dist/cjs/performance.js"
+    },
+    "./object": {
+      "types": "./dist/object.d.ts",
+      "import": "./dist/esm/object.js",
+      "require": "./dist/cjs/object.js"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "import": "./dist/esm/react.js",
+      "require": "./dist/cjs/react.js"
+    },
+    "./string": {
+      "types": "./dist/string.d.ts",
+      "import": "./dist/esm/string.js",
+      "require": "./dist/cjs/string.js"
+    },
+    "./date": {
+      "types": "./dist/date.d.ts",
+      "import": "./dist/esm/date.js",
+      "require": "./dist/cjs/date.js"
+    },
+    "./misc": {
+      "types": "./dist/misc.d.ts",
+      "import": "./dist/esm/misc.js",
+      "require": "./dist/cjs/misc.js"
+    },
+    "./network": {
+      "types": "./dist/network.d.ts",
+      "import": "./dist/esm/network.js",
+      "require": "./dist/cjs/network.js"
+    },
+    "./storage": {
+      "types": "./dist/storage.d.ts",
+      "import": "./dist/esm/storage.js",
+      "require": "./dist/cjs/storage.js"
+    },
+    "./logging": {
+      "types": "./dist/logging.d.ts",
+      "import": "./dist/esm/logging.js",
+      "require": "./dist/cjs/logging.js"
+    },
+    "./metrics": {
+      "types": "./dist/metrics.d.ts",
+      "import": "./dist/esm/metrics.js",
+      "require": "./dist/cjs/metrics.js"
+    },
+    "./context": {
+      "types": "./dist/context.d.ts",
+      "import": "./dist/esm/context.js",
+      "require": "./dist/cjs/context.js"
+    },
+    "./observability": {
+      "types": "./dist/observability.d.ts",
+      "import": "./dist/esm/observability.js",
+      "require": "./dist/cjs/observability.js"
+    },
+    "./internal": {
+      "types": "./dist/internal.d.ts",
+      "import": "./dist/esm/internal.js",
+      "require": "./dist/cjs/internal.js"
+    },
+    "./guards": {
+      "types": "./dist/guards.d.ts",
+      "import": "./dist/esm/guards.js",
+      "require": "./dist/cjs/guards.js"
+    },
+    "./collection": {
+      "types": "./dist/collection.d.ts",
+      "import": "./dist/esm/collection.js",
+      "require": "./dist/cjs/collection.js"
+    },
+    "./adapters": {
+      "types": "./dist/adapters.d.ts",
+      "import": "./dist/esm/adapters.js",
+      "require": "./dist/cjs/adapters.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "build:watch": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "tsc --noEmit",
+    "release": "np"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^20.0.0",
+    "@types/react": "^19.2.14",
+    "express": "^5.2.1",
+    "np": "^10.0.0",
+    "react": "^19.2.4",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "keywords": [
+    "utils",
+    "helpers",
+    "typescript",
+    "react",
+    "react-native",
+    "node",
+    "express",
+    "string",
+    "date",
+    "validation",
+    "production"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "express": ">=4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "express": {
+      "optional": true
+    }
+  }
+}

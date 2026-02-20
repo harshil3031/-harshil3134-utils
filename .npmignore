@@ -1,0 +1,19 @@
+# Source files (dist is what gets published)
+src/
+
+# Config files
+tsconfig.json
+tsup.config.ts
+vitest.config.ts
+
+# Dev & CI
+.github/
+.vscode/
+*.test.ts
+*.spec.ts
+
+# Misc
+.DS_Store
+*.log
+node_modules/
+CHANGELOG.md
